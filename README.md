@@ -19,9 +19,7 @@ ml-web-app/
 └── README.md # This file
 
 
-Absolutely, Kishu! Here's **Steps 1–8** from your ML deployment process — all cleanly formatted, with **key tasks highlighted** using Markdown emphasis (for GitHub rendering). You can copy-paste this whole block into your `README.md` file ✅
 
----
 
 ### ✅ Deployment Steps (Render + Flask + ML Model)
 
