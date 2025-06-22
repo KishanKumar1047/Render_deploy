@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Predictor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .form-box {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        input[type="text"], input[type="submit"] {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 250px;
+        }
+        input[type="submit"] {
+            background-color: #03dac6;
+            color: #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Placement Prediction System</h1>
+    <div class="form-box">
+        <form action="/predict" method="post">
+            <input type="text" name="cgpi" placeholder="Enter CGPI" required><br>
+            <input type="text" name="iq" placeholder="Enter IQ" required><br>
+            <input type="submit" value="Predict">
+        </form>
+        <h2>{{ prediction_text }}</h2>
+    </div>
+</body>
+</html>
